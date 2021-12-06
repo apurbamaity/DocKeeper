@@ -1,6 +1,6 @@
 # Dockeeper project
 
-*This project is currently in beta and hosted at: [studytracker.tech](https://studytracker.tech). See the [version 1 roadmap here](https://github.com/faraday-academy/curriculum-app/projects/1).*
+*This project is currently in beta and hosted at: https://test-deploy-walkover.herokuapp.com/ . See the [version 1 roadmap here](https://github.com/apurbamaity/DocKeeper)*
 
 This app allows users to work as a team and store documents in their workspaces.They can then keep track of their progress,upload files and download files.
 
