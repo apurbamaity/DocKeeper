@@ -13,17 +13,15 @@ This app allows users to work as a team and store documents in their workspaces.
 1. [Mockups](#mockups)
 1. [Design](#design)
 1. [Routes](#routes)
-1. [Schema](#schema)
-1. [API](#api)
 1. [MVP Features](#mvp-features)
 1. [Version 1 Features](#version-1-features)
 
 ## Running Locally
 
 1. Clone this repo
-1. `cd curriculum-front`
+1. `cd FRONTEND`
 1. `npm i`
-1. `npm run serve`
+1. `npm start`
 
 ## Tech Stack
 
@@ -31,8 +29,9 @@ This app allows users to work as a team and store documents in their workspaces.
 1. HTML
 2. CSS
 3. React JS
-4. DB----Enter here
-5. AWS/Heroku (hosting)
+4. spring boot for api
+5. DB----MySQL
+6. AWS/Heroku (hosting)
 
 ## Mockups
 
@@ -59,75 +58,13 @@ Color Palette:
 ## Routes
 
 * / --> Home Page/Landing Page
-* curricula --> shows all curricula
-* curricula/create --> shows form to create
-* curricula/id --> shows single curriculum
-* curricula/id/update --> update single curriculum
-
-## Schema
-
-**Curriculum**
-
-* id: UUID (pk)
-* name: string
-* goal: string
-* description: string
-* sections: [object]
-    * name: string
-    * resources: [object]
-        * isCompleted: boolean (default: false)
-        * name: string
-        * url: string
-    * projects:  [object]
-        * isCompleted: boolean (default: false)
-        * name: string
-        * url: string
-* createdBy: Mongo object id (userId, foreign key)
-* createdAt: timestamp
-* updatedAt: timestamp
-
-**User**
-
-* username: String
-* email: String
-* password: String (hashed password)
-* isVerified: Boolean
-* createdAt: timestamp
-* updatedAt: timestamp
-
-**Verification**
-
-*This is just to store and expire verification codes that are sent to user by email.*
-
-* userId: Mongo object id (userId, foreign key)
-* code: Number
-
-## API
-
-**Prefix:** `/api/v1`
-
-**Endpoints:**
-
-`/curricula`
-
-* get
-* post
-
-`/curricula/:id`
-
-* get
-* patch
-* delete
-
-`/count`
-
-*get the ratio of completed tasks for each curriculum*
-
-* get
+* /joincreate --> join or create a workspace
+* /signin | /signup --> signin or signup
+* /teaminside --> send docs in a workspace
 
 ## MVP Features
 
-1. Home Page with sign in/Sign Up options
+1. Home Page to explore all the workspaces
 2. Form Page to Sign in or Sign Up
 3. User can create a new workspace/join an existing workspace
 4. User can upload files and read/download files inside the workspace.
