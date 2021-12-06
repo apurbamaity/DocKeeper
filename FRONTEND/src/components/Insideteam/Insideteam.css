@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+/*general*/
+h1,.h1 {
+	color: black;
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 3.25rem;
+	letter-spacing: 0.5px;
+        font-family: 'Bebas Neue', cursive;
+}
+
+h2,.h2 {
+	color: black;
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	letter-spacing: 0.4px;
+        font-family: 'Bebas Neue', cursive;
+}
+
+h3,.h3 {
+	color: black;
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	letter-spacing: 0.2px;
+        font-family: 'Bebas Neue', cursive;
+}
+
+h4,.h4 {
+	color: black;
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	letter-spacing: 0.2px;
+        font-family: 'Bebas Neue', cursive;
+}
+
+h5,.h5 {
+	color: black;
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.625rem;
+        font-family: 'Bebas Neue', cursive;
+}
+
+h6,.h6 {
+	color: black;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.375rem;
+        font-family: 'Bebas Neue', cursive;
+}
+
+img{
+        border-radius: .5rem;
+}
+
+.p-large {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+        font-family: 'Signika', sans-serif;
+}
+
+.p-small {
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+        font-family: 'Signika', sans-serif;
+}
+
+a  , a:focus{
+        text-decoration: none;
+}
+
+
+
+
+
+/*NAVBAR*/
+.navbar {
+  border-bottom: 10px solid #0092ff;
+  background-color: rgb(72, 72, 72);
+  /*box-shadow: 0 0 30px rgba(0, 255, 0, 0.694);*/
+}
+
+.navbar{
+        background-color: #fcfafb;
+}
+
+.navbar a{
+        color:black;
+}
+.logotext{
+        font-family: 'Fredoka One', cursive;
+}
+.href:hover{
+        color : red;
+        font-family: 'Fredoka One', cursive;
+}
+.href{
+        font-family: 'Fredoka One', cursive;
+}
+
+
+.sidebar{
+        background-color:   #e6f2ff
+}
+
+.chatbar{
+        background-color:  #d9ffcc
+}
+.doc_single{
+        padding:5px;
+        border: 3px solid black;
+        border-radius:15px;
+}
+.sender{
+        background-color: lightyellow;
+}
+.single_doc{
+        border: 3px solid black;
+        border-radius:15px;
+}
+.small_sidebar{
+        position:sticky;
+        background-color:#e6f2ff;
+        width:100%;
+        height:2000px;
+        top:80px;
+        display:none;
+        overflow:scroll;
+}
+.hide_this{
+        visibility: hidden;
+}
+.invite_link{
+        background-color:lightyellow;
+        border: 3px solid blue;
+        border-radius:15px;
+}
+textarea{
+        height:100%;
+}
+
+
+
+
+
+
+
+
+.Chatbox{
+        position: fixed;
+        width:100%;
+        bottom:0;
+    
+        background-color:#ffd6cc;
+}
+
+.documrnt:hover{
+        cursor:pointer;
+}
+
+.pointer:hover , .pointer:focus{
+        cursor:pointer;
+        border-right:3px solid red;
+}
+
+.fa-search{
+
+}
+
+.fa-search:hover{
+        cursor:pointer;
+        color:red;
+}
+
+.trash:hover , .trash:focus{
+        cursor:pointer;
+        color:red;
+}
+
