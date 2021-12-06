@@ -139,6 +139,16 @@ a  , a:focus{
         width:80%;
 }
 
+.add_border{
+        border : 2px solid black;
+        padding : 3px;
+        border-radius:10px;
+        color:red;
+}
+.add_border:focus , .add_border:hover{
+        background-color:black;
+        color:white;
+}
 
 
 @media only screen and (max-width: 750px) {

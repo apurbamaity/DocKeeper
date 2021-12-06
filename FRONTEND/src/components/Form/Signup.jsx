@@ -88,7 +88,7 @@ return(
                                                         <div className="">
                                                                 <h1 className="text-center">Sign Up Here</h1>
                                                                 <div className="py-2 p-large">Already have an account <a className="text-danger" href="/signin">signin</a> here</div>
-                                                                <input onChange={update} name="username" type="text" className="p-2 w-100 " placeholder="enter username" /><br/><br/>
+                                                                <input onChange={update} name="username" type="text" className="p-2 w-100 " placeholder="enter username" required/><br/><br/>
                                                                 <input onChange={update} name="userid" type="email" className="p-2 w-100 " placeholder="enter email-id" /><br/><br/>
                                                                 <input onChange={update} name="password" type="password" className="p-2 w-100 " placeholder="enter password" /><br/><br/>
                                                                 <input onChange={update} name="conpass" type="text" className="p-2 w-100 " placeholder="confirm password" /><br/><br/>

@@ -111,7 +111,7 @@ const Hero =()=>{
                                                         <h1 class="text-danger head_text">ONE WORKSPACE. EVERY TEAM.</h1>
                                                         <div class="p-large head_para">WE ARE MORE THAN A DOC TRY IT FREE TODAY OR JOIN A EXISTING TEAM</div>
                                                         <div class="py-3 head_btn">
-                                                                <a href="/joinorcreate#join"><input type="submit" class="btn w-100 btn-info" value="join a team" /></a>
+                                                                <a href="/joinorcreate#join"><input type="submit" class="btn w-100 btn-info" value="Join A Workspace" /></a>
                                                         </div>
                                                 </div>
                                          </div>
@@ -125,9 +125,9 @@ const Hero =()=>{
                                                         <div class="A"> TRUSTED BY TEAMS AT</div>
                                                 </div>
                                                 <div class="d-flex flex-row justify-content-center">
-                                                        <div class="px-2 text-danger">PIXER</div>
-                                                        <div class="px-2 text-info">TRAVELPARK</div>
-                                                        <div class="px-2 text-success">SPOTIFY</div>
+                                                        <a href="https://www.pixer.io/"><div class="px-2 text-danger">PIXER</div></a>
+                                                        <a href="https://www.travelparks.com/"><div class="px-2 text-info">TRAVELPARK</div></a>
+                                                        <a href="https://www.spotify.com/us/"><div class="px-2 text-success">SPOTIFY</div></a>
                                                 </div>
 
 
@@ -141,9 +141,9 @@ const Hero =()=>{
                                         <div class=" B1  p-2">
 
                                                 <div class="explore_teams text-center h3 py-3">
-                                                        EXPLORE ALL YOUR TEAMS
+                                                        EXPLORE ALL WORKSPACES
                                                 </div>
-                                                <div class=" row" id="team">
+                                                <div class=" row text-center" id="team">
 
 
                                                         <Teams team={team}/>
@@ -220,8 +220,8 @@ const Hero =()=>{
                                                                         <div class="h4">
 
                                                                                 YOUR ALL TEAMS WILL BE SHOWN HERE..<br/><br/>
-                                                                                <a href="/joinorcreate#join"><input type="submit" class="btn btn-success w-100 " value="join a team" /></a><br/><br/>
-                                                                                <a href="/joinorcreate#create"><input type="submit" class="btn btn-warning w-100 " value="create a team" /></a>
+                                                                                <a href="/joinorcreate#join"><input type="submit" class="btn btn-success w-100 " value="Join A Workspace" /></a><br/><br/>
+                                                                                <a href="/joinorcreate#create"><input type="submit" class="btn btn-warning w-100 " value="Create A Workspace" /></a>
                                                                                 </div><br/>
                                                                 </div>
                                                         </div>

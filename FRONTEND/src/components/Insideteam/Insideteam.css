@@ -188,3 +188,12 @@ textarea{
         color:red;
 }
 
+.search_docs:hover{
+        border : 2px solid red;
+        padding : 5px;
+        border-radius :10px;
+}
+.search_box{
+        height:100px;
+}
+

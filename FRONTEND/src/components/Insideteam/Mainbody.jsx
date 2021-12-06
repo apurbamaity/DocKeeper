@@ -52,6 +52,51 @@ const Renderdocs = (props) =>{
         
 }
 
+const Singlemember = (props) =>{
+
+        if(props.index === 0){
+                return(
+                        <>
+                                                <div class="d-flex flex-row justify-content-between m-1">
+                                                        <div>
+                                                                <h6> <i class="fa fa-user" aria-hidden="true"></i>   {props.object.username}</h6>
+                                                                <div class="p-small">{props.object.userid}</div>
+                                                        </div>
+                                                        <div class="px-3">
+                                                                <h6 class="pointer"> 
+                                                                ADMIN
+                                                                </h6>
+                                                        </div>
+                                                                                
+                                                                                
+                                                </div>
+
+
+                                        </>
+                )
+        }else{
+                return(
+                        <>
+                                                <div class="d-flex flex-row justify-content-between m-1">
+                                                        <div>
+                                                                <h6> <i class="fa fa-user" aria-hidden="true"></i>   {props.object.username}</h6>
+                                                                <div class="p-small">{props.object.userid}</div>
+                                                        </div>
+                                                        <div class="px-3">
+                                                                <h6 onClick={() => props.remove(props.object.id) } class="pointer"> 
+                                                                remove   <i class="fa fa-chain-broken text-danger " aria-hidden="true"></i> 
+                                                                </h6>
+                                                        </div>
+                                                                                
+                                                                                
+                                                </div>
+
+
+                                        </>
+                )
+        }
+}
+
 const Showmwmber = (props) =>{
 
         const teamid = props.teamid
@@ -63,9 +108,12 @@ const Showmwmber = (props) =>{
                 axios.get(url+"/removemember/"+teamid+"/"+memberid+"/"+localStorage.getItem('userid') )
                 .then( (res) =>{
                         if(res.data === 200){
-                                toast.success("⛔ message deleted successfully",{
+                                toast.success("⛔ member removed successfully",{
                                         position:"top-center",autoClose:1000,
                                 })
+                                props.getAllMembers()
+
+
                         }else if(res.data === 400){
                                 toast.error("⛔ You can not remove",{
                                         position:"top-center",autoClose:1000,
@@ -74,32 +122,14 @@ const Showmwmber = (props) =>{
                 },(error) =>{
 
                 })
-
-
-
         }
 
         return(
                 <>
                         {
-                                props.member.map( (o) =>(
-                                        <>
-                                                <div class="d-flex flex-row justify-content-between m-1">
-                                                        <div>
-                                                                <h6> <i class="fa fa-user" aria-hidden="true"></i>   {o.username}</h6>
-                                                                <div class="p-small">{o.userid}</div>
-                                                        </div>
-                                                        <div class="px-3">
-                                                                <h6 onClick={() => remove(o.id) } class="pointer"> 
-                                                                <i class="fa fa-chain-broken text-danger fa-2x" aria-hidden="true"></i> 
-                                                                </h6>
-                                                        </div>
-                                                                                
-                                                                                
-                                                </div>
+                                props.member.map( (o , i) =>(
 
-
-                                        </>
+                                        <Singlemember index={i} object={o} remove={remove}/>
                                 ))
                         }
 
@@ -182,14 +212,14 @@ const Mainbody = (props) =>{
                 <>
 
 
-                                                        <div class="small_sidebar p-3">
+                                                        <div class="small_sidebar py-3 px-1">
 
                                                                 <div class="d-flex flex-direction-row py-2">
-                                                                        <div class="px-2">
+                                                                        <div class="px-1">
                                                                                 <input onChange={updateSearch} type="text" classNamae="w-100 px-2" placeholder="enter file name" />
                                                                         </div> 
                                                                         <div class="" onClick={getRelevantDocs}>
-                                                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                                                                <span class="h5"> find  <i class="fa fa-search" aria-hidden="true"></i> </span>
                                                                         </div> 
                                                                 </div>
 
@@ -211,7 +241,7 @@ const Mainbody = (props) =>{
 
                                                                 <h5 class="text-danger doc_single">All Team Members</h5>
                                                                 <div class="col">
-                                                                        <Showmwmber teamid={props.id} member={member} />
+                                                                        <Showmwmber getAllMembers={getAllMembers} teamid={props.id} member={member} />
                                                                 </div><br/>
 
 
@@ -222,14 +252,14 @@ const Mainbody = (props) =>{
                                         <div>
                                                 <div class="row py-3">
 
-                                                        <div class="col-lg-4 col-sm-0 sidebar p-3 small_sidebar_hide">
+                                                        <div class="col-lg-4 col-sm-0 sidebar py-3 px-1 small_sidebar_hide">
 
                                                                 <div class="d-flex flex-direction-row py-2">
-                                                                        <div class="px-2">
-                                                                                <input onChange={updateSearch} type="text" classNamae="w-100 px-2" placeholder="enter file name" />
+                                                                        <div class="px-1">
+                                                                                <input onChange={updateSearch} type="text" classNamae="w-100 px-2 search_box" placeholder="enter file name" />
                                                                         </div> 
                                                                         <div class="" onClick={getRelevantDocs}>
-                                                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                                                                <span class="h5 pointer search_docs"> find  <i class="fa fa-search" aria-hidden="true"></i> </span>
                                                                         </div> 
                                                                 </div>
 
@@ -239,7 +269,7 @@ const Mainbody = (props) =>{
 
 
                                                                 <h5 class="text-danger doc_single">docs manager</h5>
-                                                                <Renderdocs chat={chat} />
+                                                                        <Renderdocs chat={chat} />
                                                                 <br/>
 
 
@@ -252,7 +282,7 @@ const Mainbody = (props) =>{
 
                                                                 <h5 class="text-danger doc_single">All Team Members</h5>
                                                                 <div class="col">
-                                                                        <Showmwmber teamid={props.id} member={member} />
+                                                                        <Showmwmber getAllMembers={getAllMembers} teamid={props.id} member={member} />
                                                                 </div><br/>
                                                         </div>
 

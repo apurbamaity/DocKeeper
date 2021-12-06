@@ -33,15 +33,20 @@ const Profile = (props) =>{
 
                         <div class="">
                                 <div class="col">
+                                        
                                         <div class="row">
-                                                <h1>ACCOUNT DETAILS</h1>
+                                                <div class="d-flex flex-direction-row justify-content-between align-content-center">
+                                                        <div><h1>ACCOUNT DETAILS</h1></div>
+                                                        <div class="cross" ><i class="text-danger pointer fa fa-times fa-2x" aria-hidden="true"></i> </div>
+
+                                                </div>
                                         </div>
                                         <div class="row">
                                                 <h4>name</h4>
                                                 <div class="p-small">{props.user.username}</div>
                                         </div>
                                         <div class="row">
-                                                <h4>emails id</h4>
+                                                <h4>email id</h4>
                                                 <div class="p-small">{props.user.userid}</div>
                                         </div>
                                 </div>

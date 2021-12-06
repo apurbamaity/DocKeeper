@@ -114,6 +114,7 @@ class Chatbox extends Component{
 
                         console.log(response);
                         this.props.met()
+                        window.location.reload()
                 },(error) => {
                         console.log("error");
                 }
@@ -130,12 +131,14 @@ class Chatbox extends Component{
 
                         console.log(response);
                         this.props.met()
+                        window.location.reload()
                 },(error) => {
                         console.log("error");
                 }
                 );
 
         }
+        //window.location.reload()
 
         /*try{
                 var x = data.name[0]

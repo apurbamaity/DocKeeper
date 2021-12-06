@@ -22,7 +22,9 @@ const Footer = () =>{
                                 </div>
 
                                 <div class="col-sm-6 col-lg-6 col-md-6 col-12">
-                                        <p class="p-large text-white">Write for us at dockkeep@gmail.com</p>
+                                        <p class="p-large text-white">Write for us at dockkeep@gmail.com.
+                                                <a href="mailto:nmaityapurba020@gmail.com"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                        </p>
                                 </div>
 
                         </div>

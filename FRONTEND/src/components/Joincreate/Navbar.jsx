@@ -39,7 +39,7 @@ const Nav = () =>{
                                                 <span class=""> <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> </span></span>
 
                                                 <a class="h6 px-2 text-danger" href=""><span class="href">  
-                                                <span onClick={logout} class="h4"> logout </span> </span></a>
+                                                <span onClick={logout} class="add_border h5 "> logout </span> </span></a>
                                         </span>
                                 </nav>
 
