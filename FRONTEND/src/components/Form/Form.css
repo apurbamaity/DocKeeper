@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+/*general*/
+h1,.h1 {
+	color: black;
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 3.25rem;
+	letter-spacing: 0.5px;
+        font-family: 'Bebas Neue', cursive;
+}
+
+h2,.h2 {
+	color: black;
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	letter-spacing: 0.4px;
+        font-family: 'Bebas Neue', cursive;
+}
+
+h3,.h3 {
+	color: black;
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	letter-spacing: 0.2px;
+        font-family: 'Bebas Neue', cursive;
+}
+
+h4,.h4 {
+	color: black;
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	letter-spacing: 0.2px;
+        font-family: 'Bebas Neue', cursive;
+}
+
+h5,.h5 {
+	color: black;
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.625rem;
+        font-family: 'Bebas Neue', cursive;
+}
+
+h6,.h6 {
+	color: black;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.375rem;
+        font-family: 'Bebas Neue', cursive;
+}
+
+img{
+        border-radius: .5rem;
+}
+
+.p-large {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+        font-family: 'Signika', sans-serif;
+}
+
+.p-small {
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+        font-family: 'Signika', sans-serif;
+}
+
+a  , a:focus{
+        text-decoration: none;
+}
+
+/*NAVBAR*/
+.navbar {
+  border-bottom: 10px solid #0092ff;
+  background-color: rgb(72, 72, 72);
+  /*box-shadow: 0 0 30px rgba(0, 255, 0, 0.694);*/
+}
+
+.navbar{
+        background-color: #fcfafb;
+}
+
+.navbar a{
+        color:black;
+}
+.logotext{
+        font-family: 'Fredoka One', cursive;
+}
+.href:hover{
+        color : red;
+        font-family: 'Fredoka One', cursive;
+}
+.href{
+        font-family: 'Fredoka One', cursive;
+}
+
+
+.join_inner{
+        background-color:white;
+        border:3px solid black;
+        border-radius: 25px;
+}
+
+input{
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.694);
+        border : none;
+
+}
+
+input:hover , input:focus{
+        text-decoration:none;
+        outline:none;
+        box-shadow: 0 0 10px rgba(42, 218, 238, 0.694);
+        border-radius: 5px;
+        border-bottom : 4px solid blue;
+        
+}
+
+
+/* FOOTER */
+footer {
+  position: relative;
+  bottom:0;
+  background-color: rgb(80, 80, 80);
+  width: 100%;
+  height:300px;
+  border-top: 10px solid rgb(220, 220, 220);
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+footer a:hover{
+        color:white;
+        cursor:pointer;
+        border : none;
+        border-bottom : 1px solid white;
+}
