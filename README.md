@@ -1,6 +1,6 @@
 # Dockeeper project
 
-*This project is currently in beta and hosted at: https://test-deploy-walkover.herokuapp.com/ . See the [version 1 roadmap here](https://github.com/apurbamaity/DocKeeper)*
+*This project is currently in beta and hosted at: http://walkover-deploy-dockeep.herokuapp.com/ . See the [version 1 roadmap here](https://github.com/apurbamaity/DocKeeper)*
 
 This app allows users to work as a team and store documents in their workspaces.They can then keep track of their progress,upload files and download files.
 
