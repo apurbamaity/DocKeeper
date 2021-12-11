@@ -11,7 +11,6 @@ This app allows users to work as a team and store documents in their workspaces.
 1. [Running Locally](#running-locally)
 1. [Tech Stack](#tech-stack)
 1. [Mockups](#mockups)
-1. [Design](#design)
 1. [Routes](#routes)
 1. [MVP Features](#mvp-features)
 1. [Version 1 Features](#version-1-features)
@@ -49,11 +48,6 @@ This app allows users to work as a team and store documents in their workspaces.
 
 
 
-## Design
-
-Color Palette:
-<img src="mockups/color_palette.png" alt="color palete for application">
-710627 - EA5455 - FAA275 - F5E4C3 - 34A7B2
 
 ## Routes
 
